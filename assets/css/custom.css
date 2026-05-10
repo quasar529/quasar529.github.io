@@ -1,0 +1,125 @@
+:root {
+  --global-theme-color: #0057ff;
+  --global-hover-color: #0047d6;
+  --global-code-bg-color: rgba(0, 87, 255, 0.08);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #2f7bff;
+  --global-hover-color: #6aa0ff;
+  --global-code-bg-color: rgba(47, 123, 255, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.intro-row {
+  margin-bottom: 1.25rem;
+}
+
+.profile-photo {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.desc {
+  line-height: 1.6;
+}
+
+.pub-note,
+.paper-summary,
+.timeline-meta {
+  color: var(--global-text-color-light);
+}
+
+.pub-note {
+  margin-bottom: 1.5rem;
+}
+
+.paper-summary {
+  margin-top: 0.35rem;
+  margin-bottom: 0;
+}
+
+.cv-section {
+  margin-top: 2.5rem;
+}
+
+.cv-section h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-item {
+  border-left: 2px solid var(--global-theme-color);
+  margin-bottom: 1.1rem;
+  padding-left: 1rem;
+}
+
+.timeline-title {
+  font-weight: bolder;
+}
+
+.award-list {
+  padding-left: 1.25rem;
+}
+
+.award-list li {
+  margin-bottom: 0.45rem;
+}
+
+.publications ol.bibliography li {
+  margin-bottom: 1.35rem;
+}
+
+.publications ol.bibliography li .abbr {
+  min-height: 2rem;
+  height: auto;
+}
+
+.publications ol.bibliography li .abbr abbr {
+  margin-bottom: 0.25rem;
+}
+
+.publications ol.bibliography li .title {
+  overflow-wrap: break-word;
+}
+
+.publications ol.bibliography li .author sup {
+  border-bottom: 0;
+  font-size: 0.72em;
+  line-height: 0;
+  margin-left: 1px;
+  position: relative;
+  top: -0.45em;
+  vertical-align: baseline;
+}
+
+@media (max-width: 575.98px) {
+  .intro-row figure {
+    max-width: 240px;
+  }
+
+  .publications ol.bibliography li .row {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .publications ol.bibliography li .col-sm-2,
+  .publications ol.bibliography li .col-sm-9 {
+    max-width: 100%;
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .social .contact-icons {
+    font-size: 2.45rem;
+  }
+
+  .post-title {
+    margin-top: 1rem;
+  }
+}
